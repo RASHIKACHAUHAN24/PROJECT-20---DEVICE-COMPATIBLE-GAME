@@ -21,11 +21,11 @@ function preload(){
 function setup(){
   
 //create the canvas and adjust the window sizes to suit the device 
-createCanvas(400,600);
+createCanvas(windowWidth,windowHeight);
 
 path=createSprite(width/2,200);
 path.addImage(pathImg);
-path.velocityY = 4;
+path.velocityY = 8;
 
 
 //creating boy running
@@ -108,7 +108,7 @@ function createCash() {
     var cash = createSprite(Math.round(random(50, width-50),40, 10, 10));
     cash.addImage(cashImg);
   cash.scale=0.12;
-  cash.velocityY = 5;
+  cash.velocityY = 10;
   cash.lifetime = 200;
   cashG.add(cash);
   }
@@ -121,7 +121,7 @@ function createDiamonds() {
     var diamonds = createSprite(Math.round(random(50, width-50),40, 10, 10));
     diamonds.addImage(diamondsImg);
   diamonds.scale=0.03;
-  diamonds.velocityY = 5;
+  diamonds.velocityY = 10;
   diamonds.lifetime = 200;
   diamondsG.add(diamonds);
 }
@@ -134,7 +134,7 @@ function createJwellery() {
     var jwellery = createSprite(Math.round(random(50, width-50),40, 10, 10));
     jwellery.addImage(jwelleryImg);
   jwellery.scale=0.13;
-  jwellery.velocityY = 5;
+  jwellery.velocityY = 10;
   jwellery.lifetime = 200;
   jwelleryG.add(jwellery);
   }
@@ -147,7 +147,7 @@ function createSword(){
     var sword = createSprite(Math.round(random(50, width-50),40, 10, 10));
     sword.addImage(swordImg);
   sword.scale=0.1;
-  sword.velocityY = 4;
+  sword.velocityY = 10;
   sword.lifetime = 200;
   swordGroup.add(sword);
   }
